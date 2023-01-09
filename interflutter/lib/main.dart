@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
 
 import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:intl/intl.dart';
 
 void main() {
+  Intl.defaultLocale = 'fr'; //default lang
   runApp(const MyApp());
 }
 
@@ -14,13 +17,15 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Localizations Sample App',
-      localizationsDelegates: const [
+      localizationsDelegates: [
+        AppLocalizations.delegate,
         GlobalMaterialLocalizations.delegate,
         GlobalWidgetsLocalizations.delegate,
         GlobalCupertinoLocalizations.delegate,
       ],
-      supportedLocales: const [
+      supportedLocales: [
         Locale('en', ''), // English, no country code
+        Locale('fr', ''), // English, no country code
         Locale('es', ''), // Spanish, no country code
       ],
       theme: ThemeData(
@@ -59,6 +64,7 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
+            Text(AppLocalizations.of(context)!.helloWorld),
             const Text(
               'You have pushed the button this many times:',
             ),
