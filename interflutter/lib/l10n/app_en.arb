@@ -1,6 +1,17 @@
 {
-    "helloWorld": "Hello World!",
-    "@helloWorld": {
-      "description": "The conventional newborn programmer greeting"
-    }
+    "appTitle": "Heroes of computer science",
+    "heroNumber": "6 Hereos",
+    "chooseLang": "Chose language",
+    "bornHero1": "9 December 1906",
+    "bioHero1": "Devised theory of machine-independent programming languages.",
+    "bornHero2": "23 June 1912",
+    "bioHero2": "Father of theoretical computer science & artificial intelligence.",
+    "bornHero3": "7 November 1939",
+    "bioHero3": "Turing Award winner; inventor of Liskov substitution principle.",
+    "bornHero4": "11 August 1950",
+    "bioHero4": "Designed & developed the Apple I & Apple II microcomputers.",
+    "bornHero5": "8 June 1955",
+    "bioHero5": "Inventor of the World Wide Web.",
+    "bornHero6": "28 October 1955",
+    "bioHero6": "Co-founder of Microsoft Corporation; philanthropist."
 }

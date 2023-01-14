@@ -1,3 +1,17 @@
 {
-    "helloWorld": "Bonjour le monde!"
+     "appTitle": "Héros de l'informatique",
+     "heroNumber": "6 Héros",
+     "chooseLang": "Choisir la langue",
+     "bornHero1": "9 décembre 1906",
+     "bioHero1": "Élaboration d'une théorie des langages de programmation indépendants de la machine.",
+     "bornHero2": "23 juin 1912",
+     "bioHero2": "Père de l'informatique théorique et de l'intelligence artificielle.",
+     "bornHero3": "7 novembre 1939",
+     "bioHero3": "Lauréat du prix Turing; inventeur du principe de substitution de Liskov.",
+     "bornHero4": "11 août 1950",
+     "bioHero4": "Conçu et développé les micro-ordinateurs Apple I et Apple II.",
+     "bornHero5": "8 juin 1955",
+     "bioHero5": "Inventeur du World Wide Web.",
+     "bornHero6": "28 octobre 1955",
+     "bioHero6": "Co-fondateur de Microsoft Corporation; philanthrope."
 }

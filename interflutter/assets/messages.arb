@@ -1,0 +1,23 @@
+{
+  "app_title": "Programming Language",
+  "hello": "Hello",
+  "change_language": "Change Language",
+  "select_language": "Select Language",
+  "selected_language": "Selected language: {language}"
+}
+
+{
+  "app_title": "Les Langages de programmation",
+  "hello": "Bonjour",
+  "change_language": "Changer de langue",
+  "select_language": "Sélectionner une langue",
+  "selected_language": "Langue sélectionnée : {language}"
+}
+
+{
+  "app_title": "Programmacion ",
+  "hello": "Hola",
+  "change_language": "Cambiar idioma",
+  "select_language": "Seleccionar idioma",
+  "selected_language": "Idioma seleccionado: {language}"
+}
