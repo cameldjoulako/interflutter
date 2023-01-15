@@ -84,7 +84,6 @@ class _ChangeLanguageState extends State<ChangeLanguage> {
                       setState(() {
                         languageData[index]['isCheck'] = value as Object;
                         //Locale(languageData[index]['typeLangage'].toString())
-                        context.dependOnInheritedWidgetOfExactType()
                       });
                     },
                   ),
