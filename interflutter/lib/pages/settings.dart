@@ -38,6 +38,8 @@ class _ChangeLanguageState extends State<ChangeLanguage> {
     final theme = Theme.of(context);
     final oldCheckboxTheme = theme.checkboxTheme;
 
+    final languageProvider = LanguageProvider.of(context);
+
     final newCheckBoxTheme = oldCheckboxTheme.copyWith(
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(100),
@@ -86,7 +88,7 @@ class _ChangeLanguageState extends State<ChangeLanguage> {
                         Locale(languageData[index]['typeLangage'].toString());
                         String loc =
                             languageData[index]['typeLangage'].toString();
-                        LanguageProvider.onChangeLanguage(Locale(loc));
+                        languageProvider?.onChangeLanguage(Locale(loc));
                       });
                     },
                   ),
