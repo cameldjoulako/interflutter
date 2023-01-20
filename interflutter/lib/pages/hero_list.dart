@@ -4,7 +4,6 @@ import 'package:interflutter/pages/settings.dart';
 import 'package:interflutter/pages/widgets/hero_card.dart';
 
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
-import 'package:intl/intl.dart';
 
 class HeroList extends StatefulWidget {
   final String title;
@@ -18,7 +17,6 @@ class HeroList extends StatefulWidget {
 class _HeroListState extends State<HeroList> {
   @override
   Widget build(BuildContext context) {
-    Intl.defaultLocale = 'en';
     return Scaffold(
       appBar: AppBar(
         title: Text(AppLocalizations.of(context)!.chooseLang),

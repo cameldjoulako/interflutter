@@ -1,7 +1,8 @@
 // ignore_for_file: dead_code
 
 import 'package:flutter/material.dart';
-import 'package:interflutter/main.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:interflutter/language_provider.dart';
 
 class ChangeLanguage extends StatefulWidget {
   const ChangeLanguage({super.key});
@@ -46,8 +47,7 @@ class _ChangeLanguageState extends State<ChangeLanguage> {
     return Scaffold(
       appBar: AppBar(
         elevation: 0,
-        backgroundColor: Colors.white.withOpacity(0),
-        title: const Text('Choisissez une langue'),
+        title: Text(AppLocalizations.of(context)!.chooseLang),
       ),
       body: Column(
         mainAxisSize: MainAxisSize.max,
@@ -83,7 +83,10 @@ class _ChangeLanguageState extends State<ChangeLanguage> {
                     onChanged: (bool? value) {
                       setState(() {
                         languageData[index]['isCheck'] = value as Object;
-                        //Locale(languageData[index]['typeLangage'].toString())
+                        Locale(languageData[index]['typeLangage'].toString());
+                        String loc =
+                            languageData[index]['typeLangage'].toString();
+                        LanguageProvider.onChangeLanguage(Locale(loc));
                       });
                     },
                   ),
