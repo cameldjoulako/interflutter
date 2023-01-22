@@ -17,18 +17,6 @@ class HeroList extends StatefulWidget {
 class _HeroListState extends State<HeroList> {
   @override
   Widget build(BuildContext context) {
-    /* var formatter =
-        DateFormat.yMMMMd(Localizations.localeOf(context).toString()); */
-
-    //var date = DateTime.tryParse(AppLocalizations.of(context)!.bornHero1);
-
-    /* DateFormat.yMMMMd(Localizations.localeOf(context).toString())
-        .format(DateTime.tryParse(AppLocalizations.of(context)!.bornHero1)!) */
-    //;
-
-    /* print(DateFormat.yMMMMd(Localizations.localeOf(context).toString())
-        .format(DateTime.tryParse(AppLocalizations.of(context)!.bornHero1)!)); */
-
     return Scaffold(
       appBar: AppBar(
         title: Text(AppLocalizations.of(context)!.chooseLang),
