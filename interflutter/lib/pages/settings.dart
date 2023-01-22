@@ -29,12 +29,20 @@ class _ChangeLanguageState extends State<ChangeLanguage> {
       'defaultNameLangage': 'Espagnol',
       'typeFlag': 'es',
       'typeLangage': 'es',
-      'isCheck': true
+      'isCheck': false
     }
   ];
 
   @override
   Widget build(BuildContext context) {
+    /* final currentLanguage = localizations.locale.languageCode;
+
+    languageData = languageData
+        .map((language) => language['typeLangage'] == currentLanguage
+            ? {...language, 'isCheck': true}
+            : language)
+        .toList(); */
+
     final theme = Theme.of(context);
     final oldCheckboxTheme = theme.checkboxTheme;
 
@@ -84,11 +92,15 @@ class _ChangeLanguageState extends State<ChangeLanguage> {
                         languageData[index]['isCheck'] == true ? true : false,
                     onChanged: (bool? value) {
                       setState(() {
-                        languageData[index]['isCheck'] = value as Object;
+                        for (var element in languageData) {
+                          element['isCheck'] = false;
+                        }
+                        languageData[index]['isCheck'] = value!;
                         Locale(languageData[index]['typeLangage'].toString());
                         String loc =
                             languageData[index]['typeLangage'].toString();
                         languageProvider?.onChangeLanguage(Locale(loc));
+                        //Navigator.pop(context);
                       });
                     },
                   ),

@@ -51,7 +51,7 @@ class HeroCard extends StatelessWidget {
                   Padding(
                     padding: const EdgeInsets.only(top: 2, bottom: 4),
                     child: Text(
-                      born.isEmpty ? '' : 'Born $born',
+                      born.isEmpty ? '' : born,
                       style: const TextStyle(
                           fontSize: 12, fontWeight: FontWeight.w300),
                     ),
