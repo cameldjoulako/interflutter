@@ -35,18 +35,11 @@ class _ChangeLanguageState extends State<ChangeLanguage> {
 
   @override
   Widget build(BuildContext context) {
-    /* final currentLanguage = localizations.locale.languageCode;
-
-    languageData = languageData
-        .map((language) => language['typeLangage'] == currentLanguage
-            ? {...language, 'isCheck': true}
-            : language)
-        .toList(); */
-
     final theme = Theme.of(context);
-    final oldCheckboxTheme = theme.checkboxTheme;
 
     final languageProvider = LanguageProvider.of(context);
+
+    final oldCheckboxTheme = theme.checkboxTheme;
 
     final newCheckBoxTheme = oldCheckboxTheme.copyWith(
       shape: RoundedRectangleBorder(
@@ -100,7 +93,6 @@ class _ChangeLanguageState extends State<ChangeLanguage> {
                         String loc =
                             languageData[index]['typeLangage'].toString();
                         languageProvider?.onChangeLanguage(Locale(loc));
-                        //Navigator.pop(context);
                       });
                     },
                   ),
